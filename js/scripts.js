@@ -51,14 +51,14 @@ let pokemonList = pokemonRepository.getAll();
 
 // using forEach loop function
 
-pokemonList.forEach(function(pokemonList) {
-    if (pokemonList.height <=0.8) {
-        document.write(pokemonList.name + ' ' + pokemonList.height + ' is a tiny pokemon.<br>');
+pokemonList.forEach(function(pokemon) {
+    if (pokemon.height <=0.8) {
+        document.write(pokemon.name + ' ' + pokemon.height + ' is a tiny pokemon.<br>');
     }
-    else if (pokemonList.height >=.09 && pokemonList.height <=1.1) {
-       document.write(pokemonList.name + ' ' + pokemonList.height + ' is a average size pokemon.<br>');
+    else if (pokemon.height >=.09 && pokemon.height <=1.1) {
+       document.write(pokemon.name + ' ' + pokemon.height + ' is a average size pokemon.<br>');
     }
     else 
-        document.write(pokemonList.name + ' ' + pokemonList.height + ' is a large pokemon.<br>');
+        document.write(pokemon.name + ' ' + pokemon.height + ' is a large pokemon.<br>');
 }); 
 
