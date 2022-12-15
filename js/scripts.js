@@ -30,8 +30,10 @@ let pokemonRepository = (function () {
         }
 })(); 
 
-pokemonRepository.add({ name: 'Snorlax' });
+pokemonRepository.add({ name: 'Snorlax', height: 2.1, type: 'normal' });
 console.log(pokemonRepository.getAll());
+
+let pokemonList = pokemonRepository.getAll();
 
 
 // adding conditional for pokemon height
@@ -49,7 +51,14 @@ console.log(pokemonRepository.getAll());
 
 // using forEach loop function
 
-pokemonList.forEach(function(pokemon) {
-    document.write(pokemon.name + ' is ' + pokemon.height + ' tall and their type is ' + pokemon.type[0] + ' and ' + pokemon.type[1] + '.<br>');
-});
+pokemonList.forEach(function(pokemonList) {
+    if (pokemonList.height <=0.8) {
+        document.write(pokemonList.name + ' ' + pokemonList.height + ' is a tiny pokemon.<br>');
+    }
+    else if (pokemonList.height >=.09 && pokemonList.height <=1.1) {
+       document.write(pokemonList.name + ' ' + pokemonList.height + ' is a average size pokemon.<br>');
+    }
+    else 
+        document.write(pokemonList.name + ' ' + pokemonList.height + ' is a large pokemon.<br>');
+}); 
 
