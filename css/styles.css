@@ -4,3 +4,12 @@ body {
     font-size: 22px;
 }
 
+/* style for pokemon buttons */
+.button-class {
+    background-color: lightskyblue;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    display: inline-block;
+    margin: 8px 4px;
+}
