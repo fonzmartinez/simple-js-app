@@ -12,4 +12,15 @@ body {
     text-align: center;
     display: inline-block;
     margin: 8px 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+    transition: 800ms;
+}
+
+.pokemon-list {
+    list-style-type: none;
 }
