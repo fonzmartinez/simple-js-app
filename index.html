@@ -8,8 +8,39 @@
     <title>Simple JS App</title>
   </head>
   <body>
-      <ul class="pokemon-list"></ul> <!--added list tag-->
-      <div id="modal-container"></div> <!--added tag for modal-->
+
+    <nav class="navbar fixed-top navbar-warning bg-warning">
+      <a class="navbar-brand">
+        <img src="img/Pokeball.svg" width="40" height="40" class="d-inline-block align-top" alt="">
+        Pokemon</a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+
+
+    <div class="allPokemon">
+        <ul class="pokemon-list list-group"></ul>
+    </div>
+
+    <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Modal title</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -19,3 +50,8 @@
     <script src="js/scripts.js"></script>
   </body>
 </html>
+
+<!--
+        <ul class="pokemon-list"></ul> added list tag
+        <div id="modal-container"></div> added tag for modal
+      -->
