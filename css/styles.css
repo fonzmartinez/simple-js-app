@@ -6,18 +6,6 @@ body {
     padding-top: 60px;
 }
 
-/* style for pokemon buttons */
-/* class name changed to pokemon-button
-.button-class {
-    background-color: lightskyblue;
-    color: black;
-    padding: 12px 24px;
-    text-align: center;
-    display: inline-block;
-    margin: 8px 4px;
-    cursor: pointer;
-}
-*/
 .pokemon-button {
   background-color: lightskyblue;
   color: black;
@@ -37,22 +25,33 @@ button:hover {
 .pokemon-list {
   list-style-type: none;
   text-align: center;
+  margin: 0.5;
+  padding: 0.5;
+  display: grid;
+  width: 100%;
+  max-width: 1280px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 300px);
+}
+
+.allPokemon {
+  background-color: #90EE90;
 }
 
 /* style for modal */
 
- .modal-content {
+.modal-content {
     margin: auto;
     display: inline-block;
     box-sizing: border-box;
-    background: palegoldenrod;
+    background: #FF6347;
     padding: 15px;
     width: 100%;
     max-width: 700px;
     text-align: center;
   }
   
-  .modal-close {
+.modal-close {
     float: right;
     border: 0;
     background: none;
@@ -60,6 +59,8 @@ button:hover {
     text-decoration: underline;
   }
  
-  .list-group-item {
+.list-group-item {
+    background-color: #90EE90;
     border: none;
   }
+
